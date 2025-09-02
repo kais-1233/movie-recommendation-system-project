@@ -18,6 +18,12 @@ This project recommends movies based on their content (like genres, overview, an
 - **Source**: Kaggle - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 - **Key columns used**: `title`, `overview`, `genres`, `keywords`, `cast`, `crew`
 
+
+## 🎥 Project Demo
+
+👉 [Watch Demo Video](https://drive.google.com/file/d/1U4qRmc8FU1mxHNV-z4E_EcRfLWGNWFyN/view?usp=sharing)
+
+## ✅ Output
 ## 🛠️ Technologies Used
 
 - Python
