@@ -18,18 +18,30 @@ def set_background(image_file):
         background-attachment: fixed;
     }}
 
-    
-streA
-    /* Selectbox dropdown area (fix white text issue) */
-    .stSelectbox div[data-baseweb="select"] * {{
-        color: black !important;
-        text-shadow: none !important;
-        background-color: white !important;
+    /* Global white text with shadow */
+    h1, h2, h3, h4, h5, h6, p, span, div {{
+        color: white !important;
+        text-shadow: 1px 1px 2px black !important;
     }}
 
-    /* Selected value (inside the selectbox) */
-    .stSelectbox div[data-baseweb="select"] > div {{
+    /* --- Fix dropdown text (inside and outside selectbox) --- */
+    /* Dropdown selected text */
+    div[data-baseweb="select"] div[data-testid="stMarkdownContainer"] * {{
         color: black !important;
+        text-shadow: none !important;
+    }}
+
+    /* Dropdown menu options */
+    div[data-baseweb="popover"] div[data-baseweb="select"] * {{
+        color: black !important;
+        text-shadow: none !important;
+    }}
+
+    /* Dropdown box background */
+    div[data-baseweb="select"] > div {{
+        background-color: white !important;
+        color: black !important;
+        border-radius: 8px !important;
     }}
 
     /* Button styling */
@@ -52,7 +64,7 @@ streA
     """
     st.markdown(css, unsafe_allow_html=True)
 
-# Call background before UI
+# Apply background
 set_background("logos.png")
 
 # --------------------- Recommend Function ---------------------
